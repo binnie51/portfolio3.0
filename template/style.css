@@ -1,0 +1,11 @@
+:root{
+    --f-primary: 600;
+    --f-secondary: 700;
+    --f-bold: 800;
+    --f-slim: 400;
+    --bg-color: #1c1d25;
+    --text-color: azure;
+    --text-color2: #FF971A;
+    --transition-photo:  all 0.25s cubic-bezier(0.645,0.045,0.355,1);
+}
+
