@@ -9,3 +9,84 @@
     --transition-photo:  all 0.25s cubic-bezier(0.645,0.045,0.355,1);
 }
 
+* {
+    font-family: 'Bubblegum Sans', cursive;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: var(--bg-color);
+    scroll-behavior: smooth;
+}
+
+.hero-image{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(../assets/photo.PNG);
+    width: 1600px;
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    transition: transform .75s;
+    position: relative; /* impoertant for hover animation! */
+}
+
+/* hero image enlarge a bit when cursor hover */
+.hero-image:hover {
+    transform: scale(1.02);
+}
+
+.hero-text h1 {
+    font-size: 4em;
+    font-weight: var(--f-bold);
+    letter-spacing: .1rem;
+}
+
+.hero-text h2 {
+    font-size: 2em;
+    font-weight: var(--f-secondary);
+}
+
+.hero-text span {
+    color: var(--text-color2);
+}
+
+.myResumeBtn {
+    color: var(--bg-color);
+    background-color: #FF971A;
+    border-radius: 10px;
+    padding: 1rem 1.50rem;
+    position: relative;
+    font-size: 20px;
+    line-height: 1;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+    overflow: hidden;
+    transition:  color 1.5s;
+    width: 75%;
+}
+
+.myResumeBtn:hover {
+    background-color: var(--bg-color);
+    color: var(--text-color2);
+}
+
+.myResumeBtn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -50px;
+    width: 0;
+    height: 100%;
+    /* background-color: var(--text-color2); */
+    transform: skewX(35deg);
+    z-index: -1;
+    transition: width 1;
+}
+
+.myResumeBtn:hover::before {
+    width: 150%;
+}
