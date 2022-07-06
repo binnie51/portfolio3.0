@@ -99,6 +99,30 @@ footer {
     width: 150%;
 }
 
+.social-medias {
+    bottom: 30px;
+}
+
+.social-medias::before {
+    content: '';
+    display: block;
+    top: 0px;
+    width: 1px;
+    height: 90px;
+    margin: 0px auto;
+    background-color: var(--text-color);
+}
+
+.social-medias::after {
+    content: '';
+    display: block;
+    top: 0px;
+    width: 1px;
+    height: 40px;
+    margin: 0px auto;
+    background-color: var(--text-color);
+}
+
 /* syle about me section */
 /* animate the border when user(s) hover on 'about me' section */
 .about-container {
