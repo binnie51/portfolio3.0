@@ -12,7 +12,9 @@ I've also began to experience with custom css animation to add some personality 
 * Animate.css
 
 ## Screenshots
-
+### Large-view @media (min-width: 1024px)
+Nav menus & hero
+![nav-hero-section](./assets/screenshots/vtjia1.PNG)
 
 ## License
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg) <br/>
