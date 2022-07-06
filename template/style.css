@@ -6,17 +6,18 @@
     --bg-color: #1c1d25;
     --text-color: azure;
     --text-color2: #FF971A;
-    --transition-photo:  all 0.25s cubic-bezier(0.645,0.045,0.355,1);
-}
-
-* {
-    font-family: 'Bubblegum Sans', cursive;
-    font-family: 'Inter', sans-serif;
 }
 
 body {
     background-color: var(--bg-color);
     scroll-behavior: smooth;
+    font-family: 'Bubblegum Sans', cursive;
+    font-family: 'Inter', sans-serif;
+}
+
+footer {
+    background-color: #120B1D;
+    color: #9F9B80;
 }
 
 .hero-image{
@@ -33,9 +34,15 @@ body {
     position: relative; /* impoertant for hover animation! */
 }
 
-/* hero image enlarge a bit when cursor hover */
+/* hero image enlarged a bit when cursor hovered on */
 .hero-image:hover {
     transform: scale(1.02);
+}
+
+.hero-text {
+    background: #120B1D;
+    position: relative;
+    height: 500px;
 }
 
 .hero-text h1 {
@@ -46,17 +53,18 @@ body {
 
 .hero-text h2 {
     font-size: 2em;
-    font-weight: var(--f-secondary);
+    font-weight: var(--f-primary);
 }
 
 .hero-text span {
     color: var(--text-color2);
 }
 
+/* resume button animation */
 .myResumeBtn {
     color: var(--bg-color);
     background-color: #FF971A;
-    border-radius: 10px;
+    border-radius: 20px;
     padding: 1rem 1.50rem;
     position: relative;
     font-size: 20px;
@@ -89,4 +97,110 @@ body {
 
 .myResumeBtn:hover::before {
     width: 150%;
+}
+
+/* syle about me section */
+/* animate the border when user(s) hover on 'about me' section */
+.about-container {
+    max-width: 1000px;
+    margin: 80px;
+    /* padding: 20px 50px; */
+    border: 1px solid var(--text-color);
+    position: relative;
+}
+
+.about-container::before,
+.about-container::after {
+    content: '';
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    border: inherit;
+    transition: all .5s;
+}
+
+.about-container::before {
+    top: -20px;
+    left: -20px;
+    border-width: 3px 0 0 3px;
+}
+
+.about-container::after {
+    bottom: -20px;
+    right: -20px;
+    border-width: 0 3px 3px 0;
+}
+
+.about-container:hover::before,
+.about-container:hover::after {
+    width: 50%;
+    height: 50%;
+}
+
+/* Styling 'Get to know me!' header text  */
+.heading-about {
+    display: flex;
+    -webkit-box-align: center;
+    justify-content: flex-end;
+    position: relative;
+    margin: 10px 0px 40px;
+    width: 100%;
+    font-size: 30px;
+    font-weight: var(--f-secondary);
+    letter-spacing: .1rem;
+}
+
+.heading-about::before {
+    content: '';
+    display: block;
+    position: relative;
+    top: 20px;
+    width: 210px;
+    height: 1px;
+    margin-right: 10px;
+    background-color: var(--text-color);
+}
+
+/* profile photo styling */
+.overlay {
+    position: relative;
+}
+
+.overlay .wrapper {
+    display: block;
+    position: relative;
+    background-color: #6c6155;
+}
+
+.overlay .wrapper img {
+    position: relative;
+    mix-blend-mode: multiply;
+    filter: grayscale(50%) contrast(1);
+}
+
+/* skills icons */
+.skills {
+    font-size: 50px;
+}
+
+/* media query */
+@media only screen and (max-width:1000px) {
+    .hero-image {
+        height: 400px;
+    }
+
+    .hero-text {
+        background-color: transparent;
+    }
+
+    .hero-text h1 {
+        font-size: 3em;
+        font-weight: var(--f-bold);
+        letter-spacing: .1rem;
+    }
+    
+    .hero-text h2 {
+        font-size: 1em;
+        font-weight: var(--f-primary);
+    }
 }
