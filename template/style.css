@@ -145,7 +145,7 @@ footer {
     position: relative;
     margin: 10px 0px 40px;
     width: 100%;
-    font-size: 30px;
+    font-size: 25px;
     font-weight: var(--f-secondary);
     letter-spacing: .1rem;
 }
@@ -155,32 +155,51 @@ footer {
     display: block;
     position: relative;
     top: 20px;
-    width: 210px;
+    width: 240px;
     height: 1px;
     margin-right: 10px;
     background-color: var(--text-color);
 }
 
 /* profile photo styling */
-.overlay {
-    position: relative;
-}
 
 .overlay .wrapper {
-    display: block;
+    height: auto;
     position: relative;
     background-color: #6c6155;
 }
 
 .overlay .wrapper img {
-    position: relative;
     mix-blend-mode: multiply;
     filter: grayscale(50%) contrast(1);
+    height: fit-content;
 }
 
 /* skills icons */
 .skills {
     font-size: 50px;
+}
+
+.work-header {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    position: relative;
+    margin: 10px 0px 40px;
+    width: 100%;
+    font-size: 25px;
+    font-weight: var(--f-secondary);
+}
+
+.work-header::after {
+    content: "";
+    display: block;
+    position: relative;
+    top: 0px;
+    width: 500px;
+    height: 1px;
+    margin-left: 20px;
+    background-color: var(--text-color);
 }
 
 /* media query */
@@ -202,5 +221,9 @@ footer {
     .hero-text h2 {
         font-size: 1em;
         font-weight: var(--f-primary);
+    }
+
+    .wrapper img {
+        height: 50vh;
     }
 }
