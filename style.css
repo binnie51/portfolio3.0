@@ -103,7 +103,11 @@ footer {
 }
 
 .social-medias {
-    bottom: 0px;
+    bottom: 50px;
+}
+
+.social-medias .fa:hover {
+    opacity: 0.5;
 }
 
 /* lines graphic  */
@@ -112,7 +116,7 @@ footer {
     display: block;
     top: 0px;
     width: 1px;
-    height: 100px;
+    height: 50px;
     margin: 0px auto;
     background-color: var(--text-color);
 }
@@ -216,6 +220,7 @@ footer {
     width: 100%;
     font-size: 25px;
     font-weight: var(--f-secondary);
+    letter-spacing: .1rem;
 }
 
 .work-header::after {
@@ -274,6 +279,25 @@ footer {
     width: 20px;
     text-align: center;
     color: var(--bg-color);
+}
+
+.contact-header {
+    margin-bottom: 20px;
+    padding: 20px;
+    font-size: 30px;
+    font-weight: var(--f-secondary);
+    letter-spacing: .1rem;
+}
+
+.email-link  {
+    color: var(--text-color2);
+    background-color: transparent;
+    border: 3px solid var(--text-color2);
+    border-radius: 5px;
+    padding: 1.25rem 1.75rem;
+    font-size: 20px;
+    cursor: pointer;
+    margin-top: 50px;
 }
 
 /* media queries */
