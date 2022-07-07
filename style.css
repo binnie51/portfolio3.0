@@ -24,7 +24,7 @@ footer {
 }
 
 .hero-image{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(../assets/photo.PNG);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(./assets/photo.PNG);
     width: 1600px;
     height: 500px;
     background-position: center;
@@ -241,6 +241,7 @@ footer {
     overflow: hidden;
 }
 
+/* hover enlarged animation */
 .project-card:hover .card-image {
     transform: scale(1.15);
 }
@@ -264,7 +265,7 @@ footer {
     color: var(--text-color);
 }
 
-/* media query */
+/* media queries */
 @media only screen and (max-width:1000px) {
     .hero-image {
         height: 400px;
