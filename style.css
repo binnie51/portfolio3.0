@@ -281,6 +281,10 @@ footer {
     color: var(--bg-color);
 }
 
+.link-list:hover {
+    opacity: .5;
+}
+
 .contact-header {
     margin-bottom: 20px;
     padding: 20px;

@@ -1,8 +1,7 @@
 # personal-portfolio ver.3.0
 Personal portfolio website. This is the 3.0 version of my site under the repo "vtjia.github.io". This version 
 contains the latest portfolio works, updated skills, and fully responsive UI compared to its predecessors. 
-I've utilized the CSS framework called "tailwind css" to improve its responsitivity to given breaking points and layout. 
-I've also began to experiment with custom css animations from Animate.css and tailwind css to add some personality to the site.  
+I've utilized the CSS framework called "tailwind css" to improve its responsitivity to given breaking points and layout of the site. This also enables me to limit the amount of css codes and useless codes alike as the numbers might increase during the production phase. I've also began experimenting with custom css animations from Animate.css and tailwind css for similar purposes and to add personality to the site.  
 
 ## URL
 Deployed: https://binnie51.github.io/portfolio3.0/
