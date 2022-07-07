@@ -258,11 +258,22 @@ footer {
 
 .project-title {
     position: absolute;
-    left: 15px;
+    left: 20px;
     bottom: 25px;
-    font-size: 17px;
+    font-size: 25px;
     font-weight: var(--f-primary);
     color: var(--text-color);
+}
+
+.link-list .link-portfolio {
+    position: absolute;
+    right: 45px;
+    bottom: 5px;
+    padding: 20px;
+    font-size: 50px;
+    width: 20px;
+    text-align: center;
+    color: var(--bg-color);
 }
 
 /* media queries */
