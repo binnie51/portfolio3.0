@@ -57,7 +57,7 @@
     <!-- hero img banner -->
     <section class="container-fluid flex flex-wrap justify-center py-3">
         <div class="hero-image">
-            <div class="hero-text text-white px-14 py-28 flex flex-col">
+            <div class="hero-text px-14 py-28 flex flex-col">
                 <h3>Hi, my name is</h3>
                 <h1><span>V</span>incent <span>T</span>jia</h1>
 
@@ -65,13 +65,13 @@
                 <div style="background-color:white; height: 2px;"></div>
 
                 <h2 class="py-3">Web Developer, Designer</h2>
-                <a class="myResumeBtn" href="./assets/VT junior software engineer resume.pdf" target="_blank" rel="noreferrer">View my resume</a>
+                <a class="myResumeBtn" href="./assets/Vincent Tjia Resume.pdf" target="_blank" rel="noreferrer">View my resume</a>
             </div>
         </div>
     </section>
 
     <!-- social-medias (left-lower vertical) -->
-    <aside class="fixed grid grid-cols-1 social-medias text-white ml-3">
+    <aside class="fixed grid grid-cols-1 social-medias ml-3">
         <ul class="cursor-pointer ... text-xl py-2">
             <li class="list-item py-2 hover:animate-pulse">
                 <a href="https://github.com/binnie51" class="fa fa-github" target="_blank"></a>
@@ -89,14 +89,14 @@
         <!-- about me -->
         <section class="container-fluid flex justify-center" id="about">
             <div class="about-container px-10 py-10">
-                <h2 class="heading-about text-white text-end">About Myself</h2>
+                <h2 class="heading-about text-end">About Myself</h2>
                 <div class="grid gap-10 md:grid-cols-2 pb-5">
                     <div class="overlay">
                         <div class="wrapper">
                             <img src="./assets/profile-photo.png" alt="Vincent's profile photo">
                         </div>
                     </div>
-                    <div class="about-text text-white">
+                    <div class="about-text">
                         <p class="tracking-wide">
                             I'm a front-end developer with backgrounds in art and design.  
                             My pursue of creativity began as a kid who loves to doodle on his notebooks, then on a pen tablet.
@@ -133,8 +133,12 @@
                             <li class="list-item">
                                 <i class="fa-brands fa-java"></i>
                             </li>
-                            <!-- <li class="list-item"></li>
-                            <li class="list-item"></li> -->
+                            <li class="list-item">
+                                <i class="fa-brands fa-react"></i>
+                            </li>
+                            <!-- <li class="list-item">
+                                <i class="fa-brands fa-jquery"></i>
+                            </li> -->
                         </ul>
                     </div>
                 </div>
@@ -142,12 +146,12 @@
         </section>
         <!-- portfolio -->
         <div class="container flex flex-wrap justify-between items-center mx-auto px-10 md:px-14 lg:px-20 pb-10" id="portfolio">
-            <section class="w-full text-white">
+            <section class="w-full">
                 <h2 class="work-header">Portfolio</h2>
-                <p class="">
-                    Click on the cards to view sites!
-                </p>
-                <div class="grid grid-cols md:grid-cols-2 lg:grid-cols-3 content-center gap-6 mt-6">
+                <!-- <p class="">
+                    Click on the cards to view the deployed sites!
+                </p> -->
+                <div class="grid grid-cols lg:grid-cols-2 gap-y-10 place-items-center mt-6">
                     <div class="project-card hover:animate-pulse">
                         <a href="https://codeop2.herokuapp.com/" target="_blank">
                             <img class="card-image" src="./assets/codeop_sc.png" alt="codeOp image">
@@ -175,31 +179,50 @@
                         <h4 class="project-title">Weather App</h4>
                         <div class="link-list">
                             <a href="https://github.com/binnie51/weather-dashboard.git"
-                            class="fa fa-github link-portfolio animate__animated animate__bounce animate__infinite" target="_blank"></a>
+                            class="fa fa-github link-portfolio animate__animated animate__bounce animate__infinite" target="_blank" style="color:white;"></a>
                         </div>
                     </div>
                     <div class="project-card hover:animate-pulse">
                         <a href="https://binnie51.github.io/coding-quiz-assessment/">
-                            <img class="card-image" src="./assets/Capture4.PNG" alt="weatherapp image">
+                            <img class="card-image" src="./assets/Capture4.PNG" alt="quiz image">
                         </a>
                         <h4 class="project-title">Code Quiz</h4>
                         <div class="link-list">
                             <a href="https://github.com/binnie51/coding-quiz-assessment.git"
-                            class="fa fa-github link-portfolio animate__animated animate__bounce animate__infinite" target="_blank"></a>
+                            class="fa fa-github link-portfolio animate__animated animate__bounce animate__infinite" target="_blank" style="color:white;"></a>
+                        </div>
+                    </div>
+                    <div class="project-card hover:animate-pulse">
+                        <a href="https://rentmyride01.herokuapp.com/">
+                            <img class="card-image" src="./assets/rentmyride.PNG" alt="RentMyRide image">
+                        </a>
+                        <h4 class="project-title">RentMyRide</h4>
+                        <div class="link-list">
+                            <a href="https://github.com/AnthonyDiBlasio/RentMyRide.git"
+                            class="fa fa-github link-portfolio animate__animated animate__bounce animate__infinite" target="_blank" style="color:white;"></a>
                         </div>
                     </div>
                 </div>
             </section>
         </div>
         <!-- Contact me -->
-        <section class="container-fluid flex justify-center pb-20" id="contact">
-            <div class="text-white text-center">
+        <section class="grid grid-rows-2 mx-20 grid-flow-col pt-20" id="contact">
+            <div class="text-center">
                 <h2 class="contact-header">How to Reach Me?</h2>
                 <p class="tracking-wide pb-16">
                     Please click the button below for inquiries and job opportunities. <br>
                         My email is also open for Q&A's and making connections!
                 </p>
                 <a class="email-link hover:animate-ping" href="mailto:vtjia51@gmail.com" rel="noopener noreferrer" target="_blank">Email me</a>
+            </div>
+            <div class="text-center py-10">
+                <h2 class="font-semibold">Find me on:</h2>
+                <div class="contact-socials">
+                    <a href="https://github.com/binnie51" 
+                    class="fa fa-github px-4"></a>
+                    <a href="https://github.com/binnie51" 
+                    class="fa fa-linkedin px-4"></a>
+                </div>
             </div>
         </section>
     </main>

@@ -16,6 +16,7 @@ body {
     background-color: var(--bg-color);
     font-family: 'Bubblegum Sans', cursive;
     font-family: 'Inter', sans-serif;
+    color:aliceblue;
 }
 
 footer {
@@ -169,7 +170,7 @@ footer {
     height: 50%;
 }
 
-/* Styling 'Get to know me!' header text  */
+/* Styling header text  */
 .heading-about {
     display: flex;
     -webkit-box-align: center;
@@ -304,7 +305,18 @@ footer {
     margin-top: 50px;
 }
 
-/* media queries */
+.contact-socials{
+    font-size: xx-large;
+}
+
+/* media queries from xl-sm */
+@media only screen and (max-width:1280px) {
+    .project-card {
+        height: 220px;
+        width: 330px;
+    }
+}
+
 @media only screen and (max-width:1000px) {
     .hero-image {
         height: 400px;
@@ -328,11 +340,6 @@ footer {
     .wrapper img {
         height: 50vh;
     }
-
-    .project-card {
-        height: 220px;
-        width: 330px;
-    }
 }
 
 @media only screen and (max-width:768px) {
@@ -348,5 +355,11 @@ footer {
         height: 300px;
         width: 430px;
         margin: auto;
+    }
+}
+
+@media only screen and (max-width:640px) {
+    .social-medias {
+        visibility: hidden;
     }
 }
