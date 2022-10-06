@@ -1,4 +1,4 @@
-oper
+// burger btn logic
 const burgerBtnEl = document.querySelector("#burger-btn");
 const menuEl = document.querySelector("#mobile-menu");
 

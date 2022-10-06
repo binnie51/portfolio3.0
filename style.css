@@ -203,7 +203,7 @@ footer {
 
 .overlay .wrapper img {
     mix-blend-mode: multiply;
-    filter: grayscale(50%) contrast(1);
+    filter: grayscale(10%) contrast(1);
     height: fit-content;
 }
 
@@ -317,7 +317,7 @@ footer {
     }
 }
 
-@media only screen and (max-width:1000px) {
+@media only screen and (max-width:1024px) {
     .hero-image {
         height: 400px;
     }
